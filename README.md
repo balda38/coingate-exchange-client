@@ -5,7 +5,17 @@ Client for getting data about currencies exchange rates from https://coingate.co
 
 For more details go to https://developer.coingate.com/docs/api-overview
 
-# Usage:
+## Install
+1. Add to your `composer.json` those lines at `"repositories"`:
+```
+    {
+        "type": "vcs",
+        "url": "https://github.com/balda38/coingate-exchange-client.git"
+    }
+```
+2. Run `composer require balda38/coingate-exchange-client:dev-master`.
+
+## Usage:
 
 1. Init you client:
 ```
