@@ -13,7 +13,11 @@
     },
     "autoload": {
         "psr-4": {
-            "Balda38\\CoingateExchangeClient\\": "src/",
+            "Balda38\\CoingateExchangeClient\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
             "Tests\\": "tests/"
         }
     },
