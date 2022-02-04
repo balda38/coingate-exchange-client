@@ -1,0 +1,19 @@
+{
+    "name": "balda38/coingate-exchange-client",
+    "description": "Client for getting data about currencies exchange rates from coingate.com.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "balda38",
+            "email": "alduin2012@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Balda38\\CoingateExchangeClient\\": "src/"
+        }
+    }
+}
