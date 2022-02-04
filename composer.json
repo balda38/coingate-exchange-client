@@ -9,11 +9,15 @@
         }
     ],
     "require": {
-        "php": ">=5.3"
+        "php": ">=7.0"
     },
     "autoload": {
         "psr-4": {
-            "Balda38\\CoingateExchangeClient\\": "src/"
+            "Balda38\\CoingateExchangeClient\\": "src/",
+            "Tests\\": "tests/"
         }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6"
     }
 }

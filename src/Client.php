@@ -30,9 +30,9 @@ class Client
      * @throws CoingateAPIConnectionException
      * @throws CoingateAPIUnknownResponseException
      */
-    private function getData(string $endPoint) : array
+    protected function getData(string $endPoint) : array
     {
-        $curl = curl_init(self::COINGATE_API_URL.$endPoint);
+        $curl = curl_init(static::COINGATE_API_URL.$endPoint);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         if (!($data = curl_exec($curl))) {
             curl_close($curl);
