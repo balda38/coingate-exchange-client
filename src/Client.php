@@ -16,12 +16,12 @@ class Client
 {
     const COINGATE_API_URL = 'https://api.coingate.com/v2';
 
-    public function getCurrencies() : array
+    public function getCurrencies(): array
     {
         return $this->getData('/currencies');
     }
 
-    public function getExchangeRates() : array
+    public function getExchangeRates(): array
     {
         return $this->getData('/rates/merchant');
     }
@@ -30,7 +30,7 @@ class Client
      * @throws CoingateAPIConnectionException
      * @throws CoingateAPIUnknownResponseException
      */
-    protected function getData(string $endPoint) : array
+    protected function getData(string $endPoint): array
     {
         $curl = curl_init(static::COINGATE_API_URL.$endPoint);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
