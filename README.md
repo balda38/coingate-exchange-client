@@ -13,7 +13,7 @@ For more details go to https://developer.coingate.com/docs/api-overview
         "url": "https://github.com/balda38/coingate-exchange-client.git"
     }
 ```
-2. Run `composer require balda38/coingate-exchange-client:dev-master`.
+2. Run `composer require balda38/coingate-exchange-client:dev-main`.
 
 ## Usage:
 
